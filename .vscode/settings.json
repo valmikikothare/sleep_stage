@@ -1,0 +1,12 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.autoComplete.extraPaths": [
+        "/om2/user/valmiki/miniconda/envs/pytorch/lib/python3.11/site-packages/"],
+    "python.analysis.extraPaths": [
+        "/om2/user/valmiki/miniconda/envs/pytorch/lib/python3.11/site-packages/"
+    ],
+    "python.languageServer": "Pylance",
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.typeCheckingMode": "basic"
+}

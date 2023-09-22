@@ -1,0 +1,12 @@
+numpy 
+opencv-python 
+torch 
+torchvision 
+torchaudio 
+torchsummary
+scipy 
+scikit-learn 
+pandas 
+matplotlib
+mne
+wandb

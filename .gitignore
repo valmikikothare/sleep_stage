@@ -1,0 +1,6 @@
+/models/
+/data/
+/data.zip
+/__pycache__/
+/jupyter.out
+/wandb/
