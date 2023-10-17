@@ -4,5 +4,5 @@
 /__pycache__/
 /jupyter.out
 /wandb/
-.vscode
-.ipynb_checkpoints
+/.vscode/
+/.ipynb_checkpoints/
