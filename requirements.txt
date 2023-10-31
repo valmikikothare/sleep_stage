@@ -10,3 +10,4 @@ pandas
 matplotlib
 mne
 wandb
+accelerate
