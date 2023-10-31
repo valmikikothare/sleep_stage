@@ -1,4 +1,5 @@
 /models/
+/ft_models/
 /data/
 /data.zip
 /__pycache__/
@@ -6,3 +7,4 @@
 /wandb/
 /.vscode/
 /.ipynb_checkpoints/
+/yasa_classifier/

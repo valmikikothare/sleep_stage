@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -J jupyter
-#SBATCH -t 08:00:00
+#SBATCH -t 16:00:00
 #SBATCH --gres=gpu:1 
 #SBATCH -n 1
 #SBATCH --constraint=rocky8
