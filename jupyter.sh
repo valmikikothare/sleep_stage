@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -J jupyter
 #SBATCH -t 08:00:00
-#SBATCH --gres=gpu:1 
+#SBATCH --gres=gpu:2 
 #SBATCH -n 1
 #SBATCH --constraint=rocky8
 #SBATCH --mem 20G
