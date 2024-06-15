@@ -216,15 +216,12 @@ class BasicBlock(nn.Module):
         )
 
         if stride != 1 or in_channels != out_channels:
-            self.shortcut = nn.Sequential(
-                nn.BatchNorm2d(in_channels),
-                nn.Conv2d(
-                    in_channels,
-                    out_channels,
-                    kernel_size=1,
-                    stride=stride,
-                    bias=False,
-                ),
+            self.shortcut = nn.Conv2d(
+                in_channels,
+                out_channels,
+                kernel_size=1,
+                stride=stride,
+                bias=False,
             )
         else:
             self.shortcut = nn.Identity()
@@ -235,13 +232,13 @@ class BasicBlock(nn.Module):
         identity = x
 
         x = self.bn1(x)
-        x = self.conv1(x)
         x = self.relu(x)
+        x = self.conv1(x)
 
         x = self.bn2(x)
+        x = self.relu(x)
         x = self.conv2(x)
         x += self.shortcut(identity)
-        x = self.relu(x)
 
         return x
 
