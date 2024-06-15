@@ -1,0 +1,15 @@
+name: attn
+kwargs:
+  in_dim: 2
+  out_dim: 3
+  embed_dim: 32
+  feedforward_dim: 128
+  do_pos_embed: True
+  pos_embed_dim: 16
+  dim_blocks: [16, 32, 32, 32]
+  res_blocks: [True, True, True, True]
+  attn_blocks: [False, False, True, True]
+  num_heads: 8
+  kernel_size: 3
+  activation: gelu
+  dropout: 0.1

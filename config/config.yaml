@@ -1,0 +1,40 @@
+hydra:
+  job:
+    chdir: False
+defaults:
+  - _self_
+optimizer: 
+  fn: adamw
+  lr: 0.005
+  momentum: 0.9
+  beta1: 0.9
+  beta2: 0.999
+scheduler:
+  fn: one_cycle
+  pct_start: 0.3
+criterion: 
+  fn: ce
+compile:
+  disable: True
+  fullgraph: True
+  dynamic: Null
+  backend: inductor
+  mode: reduce-overhead
+train:
+  matmul_precision: high
+  epochs: 100
+  log_freq: 50
+  grad_clip:
+    disable: True
+    type: norm
+    value: 1.0
+checkpoint:
+  disable: True
+  root: checkpoints
+  run: Null
+  epoch: Null
+seed: Null
+tqdm: True
+wandb:
+  mode: online
+  project: Sleep Stage
